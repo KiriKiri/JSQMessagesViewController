@@ -65,6 +65,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (copy, nonatomic, readonly, null_unspecified) id<JSQMessageMediaData> media;
 
+@property (assign, nonatomic, readonly) BOOL isSending;
+
+@property (assign, nonatomic, readonly) BOOL isFailed;
+
 
 #pragma mark - Initialization
 
@@ -132,6 +136,15 @@ NS_ASSUME_NONNULL_BEGIN
                senderDisplayName:(NSString *)senderDisplayName
                             date:(NSDate *)date
                            media:(id<JSQMessageMediaData>)media;
+
+- (instancetype)initWithSenderId:(NSString *)senderId
+               senderDisplayName:(NSString *)senderDisplayName
+                            date:(NSDate *)date
+                            text:(NSString *)text
+                       isSending:(BOOL)isSending
+                        isFailed:(BOOL)isFailed;
+
+
 
 /**
  *  Not a valid initializer.

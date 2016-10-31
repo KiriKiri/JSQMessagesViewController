@@ -128,6 +128,7 @@
 
         //  add extra 2 points of space (`self.additionalInset`), because `boundingRectWithSize:` is slightly off
         //  not sure why. magix. (shrug) if you know, submit a PR
+        
         CGFloat verticalInsets = verticalContainerInsets + verticalFrameInsets + self.additionalInset;
 
         //  same as above, an extra 2 points of magix

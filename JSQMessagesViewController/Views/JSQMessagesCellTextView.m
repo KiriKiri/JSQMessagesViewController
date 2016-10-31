@@ -42,6 +42,14 @@
                                  NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle | NSUnderlinePatternSolid) };
 }
 
+- (void) jsq_applyOutgoingStyle {
+    self.textColor = [UIColor whiteColor];
+}
+
+- (void) jsq_applyIncomingStyle {
+    self.textColor = [UIColor blackColor];
+}
+
 - (void)setSelectedRange:(NSRange)selectedRange
 {
     //  attempt to prevent selecting text

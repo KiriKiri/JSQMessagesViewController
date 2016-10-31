@@ -105,7 +105,7 @@
                 <constraint firstItem="Da1-09-wR4" firstAttribute="leading" secondItem="4lh-CK-yVn" secondAttribute="leading" id="jiu-B4-TSD"/>
                 <constraint firstAttribute="bottom" secondItem="UPz-5x-c1T" secondAttribute="bottom" id="nsK-Gh-M3Z"/>
                 <constraint firstItem="UPz-5x-c1T" firstAttribute="top" secondItem="btS-p8-B7Z" secondAttribute="bottom" id="s8G-Je-7GA"/>
-                <constraint firstItem="Da1-09-wR4" firstAttribute="top" secondItem="Ufa-bF-l1Y" secondAttribute="bottom" constant="5" id="sAd-cL-a8A"/>
+                <constraint firstItem="Da1-09-wR4" firstAttribute="top" secondItem="Ufa-bF-l1Y" secondAttribute="bottom" constant="4" id="sAd-cL-a8A"/>
             </constraints>
             <size key="customSize" width="317" height="245"/>
             <connections>

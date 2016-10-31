@@ -24,4 +24,6 @@
  */
 @interface JSQMessagesCellTextView : UITextView
 
+- (void) jsq_applyOutgoingStyle;
+- (void) jsq_applyIncomingStyle;
 @end

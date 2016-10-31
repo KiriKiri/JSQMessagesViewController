@@ -37,6 +37,23 @@
                senderDisplayName:(NSString *)senderDisplayName
                             date:(NSDate *)date
                             text:(NSString *)text
+                       isSending:(BOOL)isSending
+                        isFailed:(BOOL)isFailed {
+    NSParameterAssert(text != nil);
+    
+    self = [self initWithSenderId:senderId senderDisplayName:senderDisplayName date:date isMedia:NO];
+    if (self) {
+        _text = [text copy];
+        _isSending = isSending;
+        _isFailed = isFailed;
+    }
+    return self;
+}
+
+- (instancetype)initWithSenderId:(NSString *)senderId
+               senderDisplayName:(NSString *)senderDisplayName
+                            date:(NSDate *)date
+                            text:(NSString *)text
 {
     NSParameterAssert(text != nil);
 

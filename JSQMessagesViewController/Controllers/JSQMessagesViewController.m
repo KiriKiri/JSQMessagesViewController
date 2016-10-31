@@ -518,6 +518,13 @@ static void JSQInstallWorkaroundForSheetPresentationIssue26295020(void) {
 
     if (!isMediaMessage) {
         cell.textView.text = [messageItem text];
+        
+        if (isOutgoingMessage) {
+            [cell.textView jsq_applyOutgoingStyle];
+        } else {
+            [cell.textView jsq_applyIncomingStyle];
+        }
+        
         NSParameterAssert(cell.textView.text != nil);
 
         id<JSQMessageBubbleImageDataSource> bubbleImageDataSource = [collectionView.dataSource collectionView:collectionView messageBubbleImageDataForItemAtIndexPath:indexPath];
